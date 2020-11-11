@@ -1,6 +1,7 @@
 package de.mannodermaus.example.cli
 
 import de.mannodermaus.example.*
+import de.mannodermaus.example.common.*
 
 /**
  * Runs the game logic for the given player.

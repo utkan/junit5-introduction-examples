@@ -18,15 +18,15 @@ class ScriptTests {
         println("Executed 50% test")
     }
 
-    @Test
-    @EnabledIf(
-            value = [
-                "load('nashorn:mozilla_compat.js')",
-                "var today = java.time.LocalDate.now()",
-                "var yesterday = today.minusDays(1)",
-                "yesterday.getDayOfWeek() == java.time.DayOfWeek.MONDAY"
-            ])
-    fun complexScript() {
-        println("Javascript expression with multiple lines was evaluated to determine execution of this test")
-    }
+//    @Test
+//    @EnabledIf(
+//            value = [
+//                "load('nashorn:mozilla_compat.js')",
+//                "var today = java.time.LocalDate.now()",
+//                "var yesterday = today.minusDays(1)",
+//                "yesterday.getDayOfWeek() == java.time.DayOfWeek.MONDAY"
+//            ])
+//    fun complexScript() {
+//        println("Javascript expression with multiple lines was evaluated to determine execution of this test")
+//    }
 }
