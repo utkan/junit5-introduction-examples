@@ -18,6 +18,7 @@ test {
     // Configure system properties / env vars here
     systemProperty "some.property", "true"
     systemProperty "junit.jupiter.execution.parallel.enabled", "true"
+//    systemProperty "junit.jupiter.testinstance.lifecycle.default", "per_class"
     environment "MY_ENV_VAR", "true"
 }
 

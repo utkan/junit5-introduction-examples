@@ -49,6 +49,7 @@ android {
     testOptions {
         junitPlatform {
             // Configure JUnit 5 tests here
+            configurationParameter "junit.jupiter.testinstance.lifecycle.default", "per_class"
         }
         unitTests.all {
             testLogging {
