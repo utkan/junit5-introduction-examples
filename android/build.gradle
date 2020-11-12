@@ -50,6 +50,7 @@ android {
         junitPlatform {
             // Configure JUnit 5 tests here
             configurationParameter "junit.jupiter.testinstance.lifecycle.default", "per_class"
+            configurationParameter "junit.jupiter.execution.parallel.enabled", "true"
         }
         unitTests.all {
             testLogging {

@@ -10,6 +10,7 @@ import org.junit.jupiter.api.parallel.Execution
 import org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT
 
 @TestInstance(PER_CLASS)
+@Execution(CONCURRENT)
 class ParallelTests {
 
     private var start: Long = 0
